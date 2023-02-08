@@ -1,7 +1,12 @@
 # Ignore the sub-folders that are populated by other GH projects
-Developer/Heuristics.TechEval
+Developer/Heuristics.TechEval/
 
 # Ignore the build artifacts of the TestEngineer project
-TestEngineer/SampleApp.Tests/.vs
-TestEngineer/SampleApp.Tests/bin
-TestEngineer/SampleApp.Tests/obj
+TestEngineer/SampleApp.Tests/.vs/
+TestEngineer/SampleApp.Tests/.vs/*
+TestEngineer/SampleApp.Tests/bin/
+TestEngineer/SampleApp.Tests/obj/
+
+**/bin/
+**/obj/
+**/.vs/
