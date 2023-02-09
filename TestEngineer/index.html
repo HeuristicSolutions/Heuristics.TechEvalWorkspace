@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/favicon.ico" rel="icon">
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -81,43 +81,40 @@
     </section><!-- End Breadcrumbs -->
 
     <section class="inner-page">
-      <div class="container">
+      <div class="container col-lg-10 offset-md-1">
 
-        <h2>About This Assessment</h2>
+		<div class="card shadow p-3 mb-5 bg-body rounded">
+			<p>
+				In this assessment you will write a few tests against a simple, web-based sample application.
+				We will then review and discuss your code in a technical interview.
+			</p>
+			
+			<p>
+				<b>We know your time is valuable, so we're only asking for 2 to 3 hours</b> on this. If you can't finish the whole thing, that's OK! Do what you can. 
+				(You're welcome to spend <i>more</i> time if you want, but it's not required.)
+			</p>
+			<p>
+				If you already have samples of your UI tests that you can share, those are acceptable too!
+			</p>
 
-		<p>
-			In this assessment you will write a few tests against a simple, web-based sample application. 
-			We will then perform a collaborative code review during a technical interview. 
-		</p>
-		
-		<p>
-			<b>We know your time is valuable, so we're only asking for 2 to 3 hours</b> on this. If you can't finish the whole thing, that's OK! Do what you can. 
-			(You're welcome to spend <i>more</i> time if you want, but it's not required.)
-		<p>
-		<p>
-			If you already have samples of your UI tests that you can share with us, those are acceptable too!
-		</p>
-		
+			<div class="card text-dark bg-light mb-3">
+			  <div class="card-body">
+				<h5 class="card-title">Want to use your own dev environment?</h5>
+				<p class="card-text">
+					You can do this assessment on your own computer. Just clone the 
+					<a href="https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval">Heuristics.TestEngineerEval GitHub repo</a>.
+				</p>
+			  </div>
+			</div>
+		</div>
 
-		<h2 id="starting-the-sample-app"><a class="anchor" name="starting-the-sample-app" href="#starting-the-sample-app"><span class="octicon octicon-link"></span></a>Starting the sample app</h2>
+
+		<h2>Starting the sample app</h2>
 		<p>We have pre-installed the <a href="https://github.com/dotnet-architecture/eShopOnWeb" target="_blank">eShopOnWeb sample app</a> on this virtual machine.</p>
 		<p>It should be automatically started and available at <a href="https://localhost:5001" target="_blank">https://localhost:5001</a>. There are bookmarks to this app in the Chrome browser.</p>
 		<p>If the web app isn't running, check the <strong>d:\TechAssessment\__START_ESHOP.bat</strong> file for the sample instructions to get it running.</p>
 
-		<p>
-		<div class="card">
-		  <h5 class="card-header">Want to do this in your own dev environment?</h5>
-		  <div class="card-body">
-			<p class="card-text">If you would rather write these tests in your own
-			development environment, you can do that too! You will need to clone the 
-			sample app from GitHub and run it locally.
-			</p>
-			<a href="https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval" class="btn btn-primary">View assessment on GitHub</a>
-		  </div>
-		</div>		
-		</p>
-
-		<h2 id="writing-the-tests"><a class="anchor" name="writing-the-tests" href="#writing-the-tests"><span class="octicon octicon-link"></span></a>Instructions</h2>
+		<h2>Writing the Tests</h2>
 		<p>We have created an empty C# + Nunit + Selenium project in <b>d:\TechAccessment\TestEngineer\</b> for you to work in. You can open it with Visual Studio.</p>
 		<p><a href="https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval#test-1---new-users-can-register" target="_blank">View the instructions on GitHub</a> for the specific tests to write.</p>
 		<p>To run your tests, use the <i><b>Test -&gt; Run All Tests</b></i> menu in Visual Studio.</p>
@@ -125,6 +122,66 @@
 
       </div>
     </section>
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>If you're wondering about something, chances are someone else has wondered about it too!</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> 
+			  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">
+				I'm not familiar with .NET; what should I do?
+				<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
+			  </a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+				  That's awesome! This is a tremendous opportunity for you to demonstrate how you'd approach
+				  a problem in an unfamiliar environment, which is exactly what we want to know! We're more
+				  interested in your ability to learn than what you know right this second.
+                </p>
+				<p>
+				  Using Selenium in .NET is similar to using Selenium in Java, and we've already set up the
+				  project for you. Give it your best shot, and don't be afraid to look up some introductory 
+				  C# tutorials if you're completely lost.
+				</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> 
+			  <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Can I just send in an existing code sample instead of doing this assessment? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  If you have code you're proud of and can legally share with us, we're happy to start there! Reach out to your hiring manager for details.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> 
+			  <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Should I use tabs or spaces in my sample code? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Well, of course there is only <i>one</i> correct answer to this question, but 
+				  you're welcome to use either for your sample code. Once you join the team, however, we'll make sure to indoctrinate you into the One True Way of thinking
+				  about whitespace...
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->  
 
   </main><!-- End #main -->
 

@@ -1540,6 +1540,17 @@ section {
   cursor: pointer;
 }
 
+.faq .faq-list a.faq-link {
+  display: inline;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 250;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 .faq .faq-list .icon-help {
   font-size: 24px;
   position: absolute;
